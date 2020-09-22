@@ -1,53 +1,111 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="utf-8" />
-    <!-- SEO = Básico -->
-    <title></title>
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- SEO = Redes Sociales -->
-    <meta property="og:title" content="" />
-    <meta property="og:type" content="" />
-    <meta property="og:url" content="" />
-    <meta property="og:image" content="" />
+<head>
+  <meta charset="utf-8" />
+  <!-- SEO = Básico -->
+  <title></title>
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- App Web, inidicar al navegador que elementos mostrar en un JSON -->
-    <link rel="manifest" href="site.webmanifest" />
-    <!-- icono de acceso para IOS -->
-    <link rel="apple-touch-icon" href="icon.png" />
-    <!-- Recordar que favicon.ico tiene que estar en el directorio inicial -->
+  <!-- SEO = Redes Sociales -->
+  <meta property="og:title" content="" />
+  <meta property="og:type" content="" />
+  <meta property="og:url" content="" />
+  <meta property="og:image" content="" />
 
-    <!-- links de estilos -->
-    <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/index.css" />
-    <!-- Se cambia el tema de algunos navegadores -->
-    <meta name="theme-color" content="#fafafa" />
-  </head>
-  <body>
-    <!-- *** ESTRUCTURA SEMÁNTICA *** -->
-    <!-- Header (encabezado de la página, zona superior) -->
-    <header>
-      <!-- nav (el navegador de toda la web) -->
-      <nav>
-        <a href="" class="link1">link1</a>
-        <a href="" class="link2">link2</a>
-        <a href="" class="link3">link3</a>
-        <a href="" class="link4">link4</a>
-      </nav>
-    </header>
-    <!-- Main (centro de la página, zona central) -->
-    <main>
-      <!-- section y article (posibilidades dentro de main) -->
-    </main>
-    <!-- Footer (final de la página, zona inferior) -->
-    <footer>
-      <h4>&copy;Copyright</h4>
-    </footer>
+  <!-- App Web, inidicar al navegador que elementos mostrar en un JSON -->
+  <link rel="manifest" href="site.webmanifest" />
+  <!-- icono de acceso para IOS -->
+  <link rel="apple-touch-icon" href="icon.png" />
+  <!-- Recordar que favicon.ico tiene que estar en el directorio inicial -->
 
-    <!-- *** Google Analytics *** -->
-    <script src="https://www.google-analytics.com/analytics.js" async></script>
-  </body>
+  <!-- links de estilos -->
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/index.css" />
+  <!-- Se cambia el tema de algunos navegadores -->
+  <meta name="theme-color" content="#fafafa" />
+</head>
+
+<body>
+  <!--- Header con título Pagar y retroceso.
+      Avatar y datos personales -->
+  <header>
+    <figure class="tienda_comprar">
+
+      <h2 class="tienda_comprar_título">
+        <span class="tienda_comprar_título_flecha">
+          <svg width="30" height="25" viewBox="0 0 16 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M0.646446 3.64645C0.451184 3.84171 0.451183 4.15829 0.646446 4.35355L3.82843 7.53553C4.02369 7.7308 4.34027 7.7308 4.53553 7.53553C4.73079 7.34027 4.73079 7.02369 4.53553 6.82843L1.70711 4L4.53553 1.17157C4.7308 0.97631 4.7308 0.659727 4.53553 0.464465C4.34027 0.269203 4.02369 0.269203 3.82843 0.464465L0.646446 3.64645ZM16 3.5L0.999999 3.5L0.999999 4.5L16 4.5L16 3.5Z"
+              fill="black" />
+          </svg>
+
+        </span>
+        Pagar
+      </h2>
+      <div class="espacio_20"></div>
+
+      <img class="tienda_comprar_avatar" src="img/smartphone/avatar.jpg" alt="">
+  
+
+    </figure>
+
+    <figcaption class="tienda_comprar_datos">
+      <h4 class="tienda_comprar_nombre">
+        Juana Delgado
+      </h4>
+      <h5 class="tienda_comprar_email">
+        juanadelg@gmail.com
+      </h5>
+    </figcaption>
+
+
+  </header>
+
+  <!-- Main con forma de pago, precio
+  y nombre del producto-->
+  <main>
+   
+    <section class="tienda_metodoPago">
+      <p class="tienda_metodoPago_cuenta"> 922.29€</p>
+      <p class="tienda_metodoPago_paypal">Paypal <svg width="25" height="25" viewBox="0 0 55 77" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M24.5944 1.43841L1.2121 19.541C-0.404033 20.7922 -0.404033 22.8155 1.2121 24.0534L5.09769 27.0616C6.71382 28.3128 9.32713 28.3128 10.9261 27.0616L27.5 14.23L44.0739 27.0616C45.6901 28.3128 48.3034 28.3128 49.9023 27.0616L53.7879 24.0534C55.404 22.8022 55.404 20.7789 53.7879 19.541L30.4056 1.43841C28.8239 0.187199 26.2105 0.187199 24.5944 1.43841V1.43841Z"
+            fill="#8D3B95" />
+          <path
+            d="M24.5944 75.5616L1.2121 57.459C-0.404033 56.2078 -0.404033 54.1845 1.2121 52.9466L5.09769 49.9384C6.71382 48.6872 9.32713 48.6872 10.9261 49.9384L27.5 62.77L44.0739 49.9384C45.6901 48.6872 48.3034 48.6872 49.9023 49.9384L53.7879 52.9466C55.404 54.1978 55.404 56.2211 53.7879 57.459L30.4056 75.5616C28.8239 76.8128 26.2105 76.8128 24.5944 75.5616V75.5616Z"
+            fill="#8D3B95" />
+        </svg></p>
+
+    </section>
+    <div class="espacio_50"></div>
+
+    <section class="tienda_precio">
+      <h1 class="tienda_precioGrande">29.8 <span class="euro">€</span></h1>
+
+      <h3 class="tienda_precio_descrip">
+        Bolso de Mano
+      </h3>
+
+      <div class="espacio_50"></div>
+    </section>
+
+
+  </main>
+
+  <!-- Footer con párrafo y boton de enviar -->
+  <footer>
+    <p class="footer_párrafo">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, enim molestiae?
+    </p>
+    <button class="footer_boton" type=" submit">Enviar</button>
+  </footer>
+
+  <!-- *** Google Analytics *** -->
+  <script src="https://www.google-analytics.com/analytics.js" async></script>
+</body>
+
 </html>

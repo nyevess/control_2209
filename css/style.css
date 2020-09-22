@@ -4,14 +4,43 @@
 
 /* Tipografía */
 @font-face {
-    font-family: "";
-    src: url("") format("woof2"),
-         url("") format("woof");
+    font-family: "roboto";
+    src: url("../font/roboto.woff2") format("woff2"),
+         url("../font/roboto.woff") format("woff");
 }
 
-/* ******************************** */
+@font-face {
+    font-family: "robotoi";
+    src: url("../font/robotoi.woff2") format("woff2"),
+         url("../font/robotoi.woff") format("woff");
+}
 
-/* Colores */
+:root{
 
-/* ******************************** */
+    --fuente-principal:"roboto";
+    --fuente-cursiva:"robotoi";
+    --color-lila-oscuro: #8D3B95;
+    --color-lila-medio:#FAC8FF;
+    --color-lila-claro: #FAF5FB;
+    --color-fondo: #F7F0F7;
+  
+}
+html{
+    font-family: "roboto";
+    background-color: var(--color-fondo);
+    font-size: 16px;
+}
+
+h1, h3, h4, h5{
+    margin:0;
+}
+
+/* Espacio para no poner mas margin */
+.espacio_50{
+    height: 50px;
+}
+
+.espacio_20{
+    height:20px ;
+}
 

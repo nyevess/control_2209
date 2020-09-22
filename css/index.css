@@ -2,3 +2,141 @@
 /* *** Estilos SOLO para index.html *** */
 /* *********************************** */
 
+
+/* Tamaño de body para móvil */
+body{
+    width: 375px;
+    }
+
+/* HEADER */
+
+/* Disposicion header */
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FFFFFF;
+    border-radius:10px 10px 0 0;
+    margin: 10px 10px 0 10px;
+}
+
+/* disposicion y tamaño de flecha y pagar */
+
+.tienda_comprar_título{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    font-size: 30px;
+    font-weight: normal;
+    margin:0;
+}
+
+/* colocacion flecha con position
+porque no hay manera de conseguirlo de 
+otra forma :( */
+.tienda_comprar_título_flecha{
+position: absolute;
+left: -100px;
+}
+
+
+/* tamaño avatar */
+.tienda_comprar_avatar{
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin-top: 30px;
+}
+
+
+
+/* centrado del figcaption nombre y email */
+.tienda_comprar_datos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* cursiva para  */
+
+.tienda_comprar_email{
+    font-family: var(--fuente-cursiva);
+    font-weight: lighter;
+
+}
+
+/* MAIN */
+main{
+    padding: 15px;
+    background-color: #FFFFFF;
+    border-radius: 0 0 10px 10px;
+    margin: 0 10px 10px 10px;
+}
+
+
+/* disposicion y color cuadrado paypal */
+.tienda_metodoPago{
+    background-color: var(--color-lila-claro);
+    border-radius: 10px;
+    padding:0 10px;
+    color: var(--color-lila-oscuro);
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* centrado de paypal y flechas */
+.tienda_metodoPago_paypal{
+display: flex;
+align-items: center;
+}
+svg{
+    margin-left: 10px;
+}
+
+/* disposicion precio y descripcion */
+.tienda_precio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* tamaño precio */
+.tienda_precioGrande{
+    font-size: 90px;
+    font-weight: normal;
+    display: flex;
+}
+.euro{
+    font-size: 30px;
+    align-self: flex-start;
+    margin-top: 20px;
+}
+
+/* FOOTER */
+
+footer{
+    padding: 0 30px 0 30px;;
+}
+.footer_párrafo{
+    background-color: var(--color-lila-medio);
+    border-radius: 0px 15px 15px 15px;
+    padding: 10px 5px;
+    font-size: 16px;
+}
+
+.footer_boton{
+    background-color: black;
+    color:white;
+    margin:0;
+    border:0;
+    width: 100%;
+    border-radius: 15px;
+    height: 50px;
+
+}
